@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sindicato</title>
+     <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Sindicato</a>
+        </div>
+        <ul>
+            <li><a href="#">𝙄𝙣𝙨𝙩𝙞𝙩𝙪𝙘𝙞𝙤𝙣𝙖𝙡</a>
+                <ul>
+                    <li><a href="#">Estatuto</a></li>
+                    <li><a href="#">Históricos</a></li>
+                    <li><a href="#">Misssão</a></li>
+                    <li><a href="#">Direitoria</a></li>
+                    <li><a href="#">Base Territorial</a></li>
+                </ul>
+            </li>
+            <li><a href="#">𝘾𝙤𝙣𝙫𝙚𝙣𝙘̧𝙖̃𝙤 𝘾𝙤𝙡𝙚𝙩𝙞𝙫𝙖</a></li>
+            <li><a href="#">𝘾𝙞𝙧𝙘𝙪𝙡𝙖𝙧𝙚𝙨</a></li>
+            <li><a href="#">𝙀𝙢𝙞𝙨𝙨𝙖̃𝙤 𝙙𝙚 𝙂𝙪𝙞𝙖𝙨</a>
+                <ul>
+                    <li><a href="#">Guia da Contribuição Assistêncial</a></li>
+                    <li><a href="#">Guia da Contribuição Sindical</a></li>
+                    <li><a href="#">Guia da Contribuição Associativa</a></li>
+                </ul>
+            </li>
+            <li><a href="#">𝘾𝙤𝙣𝙫𝙚̂𝙣𝙞𝙤𝙨</a></li>
+            <li><a href="#">𝘾𝙤𝙣𝙩𝙖𝙩𝙤</a></li>
+        </ul>
+        <div class="botoes">
+            <button class="n-overlay"> 𝘼𝙎𝙎𝙊𝘾𝙄𝙀-𝙎𝙀 </button>
+        </div>
+
+        <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE&text=Olá! Gostaria de saber mais informações." target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="fixed-btn">
+            <a href="https://www.instagram.com/" class="instagram-btn">
+                <i class="fa fa-instagram"></i></a>
+            <div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar">
+        <div class="card">
+            <a href="#">Sistem de gestão lotérica</a>
+        </div>
+        <div class="card">
+            <a href="#">2ª via de boleto</a>
+        </div>
+        <div class="card">
+            <a href="#">Assessoria Juridica</a>
+        </div>
+    </div>
+
+    <section class="banner" style="background-image: url(logo2.jpg)"></section>
+</body>
+
+<!-- Adicione o script do Dialogflow abaixo -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<script>
+    function DFMessengerInit(elementId) {
+        const chatbot = document.getElementById(elementId);
+        chatbot.addEventListener('dfMessengerLoaded', function (event) {
+            chatbot.dfMessenger.render();
+        });
+        chatbot.dfMessenger = new DFMessenger({
+            projectId: 'SEU_ID_DE_PROJETO',
+            enableFullScreen: false,
+            region: 'REGION'
+        });
+    }
+</script>
+<!-- Fim do script do Dialogflow -->
+
+
+
